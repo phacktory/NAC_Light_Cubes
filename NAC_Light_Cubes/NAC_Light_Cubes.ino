@@ -1,13 +1,13 @@
 /*
 
-LIGHT CUBES for NACO Hack the Sympony Concert - Feb 3 & 5, 2018.
+LIGHT CUBES for NACO "Hack the Sympony" - Feb 3 & 5, 2018.
 Written by Andrew E. Pelling
 pHacktory Inc
 GitHub: https://github.com/phacktory/NAC_Light_Cubes
 
 Description of build and hardware: https://medium.com/phacktory
 
-Conert website: https://nac-cna.ca/en/event/15987
+Concert website: https://nac-cna.ca/en/event/15987
 
 HARDWARE REQUIREMENTS: 
 - TEENSY 3.6: https://www.pjrc.com/store/teensy36.html
