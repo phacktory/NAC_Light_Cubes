@@ -292,7 +292,6 @@ void test() {
   }
 }
 
-
 // OFF FUNCTION
 
 void off() {
@@ -331,7 +330,6 @@ void setMode() {
     mode = mode;
   }
 }
-
 
 // COMPLETION FUNCTIONS FOR NEOPATTERNS
 
