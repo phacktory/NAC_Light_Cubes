@@ -1,6 +1,5 @@
 /*
-
-LIGHT CUBES for NACO "Hack the Sympony" - Feb 3 & 5, 2018.
+LIGHT CUBES for the National Arts Centre Orchestra "Symphony Hack Lab" Concert - Feb 3 & 5, 2018.
 Written by Andrew E. Pelling
 pHacktory Inc
 GitHub: https://github.com/phacktory/NAC_Light_Cubes
@@ -99,13 +98,13 @@ uint32_t bandColor[7] = {
 
 // MSGEQ7 AUDIO ANALYZER SETUP
 
-const byte audioPin           = A9;   // audio data from shield
-const byte strobePin          = 1;    // data strobe for shield
-const byte resetPin           = 0;    // reset strobe for shield
-int mag = 0;          //the magnitude of a freq band
-int numON[7];         //the number of LEDs on in a freq band
-int bright = 0;       //brightness of LEDSs in each band
-float fl_mag = 0.0;   //floating point mag after noise removal and scaling
+const byte audioPin = A9;   // Audio data from shield
+const byte strobePin = 1;   // Data strobe for shield
+const byte resetPin = 0;    // Reset strobe for shield
+int mag = 0;                // The magnitude of a freq band
+int numON[7];               // The number of LEDs on in a freq band
+int bright = 0;             // Brightness of LEDSs in each band
+float fl_mag = 0.0;         // Floating point mag after noise removal and scaling
 
 // BUTTON BOUNCE SETUP
 
@@ -120,8 +119,8 @@ Bounce offButton = Bounce();
 
 // LIGHT CUBE MODE CONTROL
 
-String mode = "spectrum";    // Mode setting
-int blinkTest = 0;      // Counter for test() function
+String mode = "spectrum";  // Mode setting
+int blinkTest = 0;         // Counter for test() function
 
 void setup() { 
   // Start serial output
@@ -238,8 +237,8 @@ void ambient() {
   for (int i = 0; i < 7; i++) {
     Cubes[i].ActivePattern = FADE;
     Cubes[i].TotalSteps = (i+1)*32;
-    Cubes[i].Color1 = Cubes[i].Color(255/(4*(i+1)),0,255);
-    Cubes[i].Color2 = Cubes[i].Color(16,16,16);
+    Cubes[i].Color1 = Cubes[i].Color(255/(4*(i+1)), 0, 255);
+    Cubes[i].Color2 = Cubes[i].Color(4, 4, 4);
   } 
 }
 
